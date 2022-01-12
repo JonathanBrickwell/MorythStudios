@@ -23,7 +23,7 @@ body, html, main {
 
 @font-face {
     font-family: 'DoomLeft';
-    src: url(/assets/fonts/amazdoom/AmazDooMLeft.ttf) format('truetype');
+    src: url('../fonts/amazdoom/AmazDooMLeft.ttf') format('truetype');
     font-weight: normal;
 }
 
@@ -45,11 +45,11 @@ a:hover {
 /* TYPOGRAPHY - FONT FAMILY */
 /* ------------------------- */
 
-h1, h2, .navbar-brand {
+h1, h2, h3, .navbar-brand {
     font-family: 'Bebas Neue', cursive;
 }
 
-h3, h4, h5, h6, p, a, .nav-link {
+h4, h5, h6, p, a, .nav-link {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h4 {
@@ -104,7 +104,7 @@ a, p {
 
 
 #introduction {
-    background: url(/assets/img/background/main-cover.jpg);
+    background-image: url('../img/background/main-cover.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -117,6 +117,20 @@ a, p {
 
 #discography {
     padding: 5% 0 5% 0;
+}
+
+#latest-music {
+    background-image: url('../img/background/main-cover.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 80px 0;
+}
+
+#latest-music h2 {
+    color: #f8e332;
+    text-shadow: -4px 3px 0 black;
 }
 
 /* ------------------------- */
@@ -146,9 +160,59 @@ hr[role="double-dotted"]::before {
 }
 
 .orange-separator {
-    margin-top: 0px;
-    width: 8%;
-    height: 10px !important;
+    display: block;
+
+}
+
+/* ------------------------- */
+/*        CONTACT FORM       */
+/* ------------------------- */
+
+form {
+    width: 50%;
+}
+
+input, textarea, .submit-btn {
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    height: 50px;
+}
+
+textarea {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    height: 150px;
+}
+
+.submit-btn {
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 28px;
+    letter-spacing: 2px;   
+    padding: 10px;
+}
+
+.contact-form label {
+    font-family: 'Bebas Neue', cursive;    
+}
+
+/* ------------------------- */
+/*        FOOTER             */
+/* ------------------------- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
 }
 
 /* ------------------------- */
